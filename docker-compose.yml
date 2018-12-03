@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  postgresql:
+    container_name: boilerplate
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: boilerplate
+      POSTGRES_PASSWORD: boilerplate
+      POSTGRES_DB: boilerplate
+    ports:
+    - 5432:5432
